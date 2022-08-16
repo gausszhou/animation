@@ -122,6 +122,7 @@ const animation = function (
   // kebab case to lower camel case
   const toLowerCamelCase = (str: string) => {
     const reg = /-(\w)/g;
+    // @ts-ignore
     return str.replace(reg, function ($: string, $1: string):string {
       return $1.toUpperCase();
     });
@@ -159,6 +160,7 @@ const animation = function (
       options.callback(value);
       req = requestAnimationFrame(step);
     } else {
+      cancelAnimationFrame(req)
       // 动画结束，这里可以插入回调...
       options.callback(to, true);
     }

@@ -86,7 +86,7 @@ h1{
 }
 .demo {
   padding: 10px;
-  *zoom: 1;
+  zoom: 1;
 }
 
 .demo:after {
