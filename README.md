@@ -1,12 +1,20 @@
 # Animation
 
+Make tween easier to use
+
+## Live Demo
+
+Preview Address: [Transport](https://gausszhou.top/animation/)
+
+## Usage
+
 ```bash
 npm i @gausszhou/animation
 ```
 
-## Usage
-
 ```ts
+import animation from "@gausszhou/animation";
+
 const eleBall = document.querySelectorAll("i")[0]
 eleBall.onclick = function () {
   if (isMoving == true) {
@@ -24,8 +32,8 @@ eleBall.onclick = function () {
 };
 ```
 
-## 学习资料
+## Code Reference
 
-https://www.zhangxinxu.com/wordpress/2016/12/how-use-tween-js-animation-easing/
-
-https://www.zhangxinxu.com/study/201612/how-to-use-tween-js.html
+```
+https://github.com/zhangxinxu/Tween
+```

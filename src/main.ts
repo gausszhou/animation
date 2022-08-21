@@ -25,7 +25,7 @@ for (let indexTitle = 0; indexTitle < eleTitles.length; indexTitle += 1) {
         }
         animation(
           0,
-          800 - 42,
+          700 - 42,
           (value: string | number): void => {
             eleBall.style.transform = "translateX(" + value + "px)";
           },
