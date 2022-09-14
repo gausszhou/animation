@@ -9,23 +9,27 @@
   ],
   "main": "./lib/animation.umd.cjs",
   "module": "./lib/animation.esm.js",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
+      "require": "./lib/animation.umd.js",
       "import": "./lib/animation.esm.js",
-      "require": "./lib/animation.umd.cjs"
+      "types": "./dist/animation.d.ts"
     }
   },
   "scripts": {
     "dev": "vite --host",
     "build": "tsc &&  vite build --base=/animation/",
-    "lib": "rollup -c rollup.config.ts",
-    "preview": "vite preview"
+    "preview": "vite preview --base=/animation/",
+    "lib": "rollup -c rollup.config.ts"
   },
   "devDependencies": {
     "@rollup/plugin-typescript": "^8.3.4",
+    "rollup-plugin-typescript2": "^0.34.0",
     "rollup-plugin-uglify": "^6.0.4",
     "tsc": "^2.0.4",
     "tslib": "^2.4.0",
+    "tsup": "^6.2.3",
     "typescript": "^4.6.4",
     "vite": "^3.0.7"
   },

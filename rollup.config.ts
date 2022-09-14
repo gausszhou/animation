@@ -1,5 +1,6 @@
 import { uglify } from "rollup-plugin-uglify";
-import typescript from '@rollup/plugin-typescript';
+// import typescript from '@rollup/plugin-typescript';
+import typescript from 'rollup-plugin-typescript2';
 
 export default [
   {
@@ -8,7 +9,7 @@ export default [
       {
         format: "umd",
         file: "lib/animation.umd.js",
-        name: "LiteGUI"
+        name: "animation"
       },
       {
         format: "esm",

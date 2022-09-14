@@ -4,7 +4,7 @@ Make tween easier to use
 
 ## Live Demo
 
-Preview Address: [Transport](https://gausszhou.top/animation/)
+Preview Address: [Transport](https://gausszhou.github.io/animation/)
 
 ## Usage
 
